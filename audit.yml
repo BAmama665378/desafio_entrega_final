@@ -1,0 +1,30 @@
+//Gerado pelo gemini para a entrega final
+
+name: Auditoria de Segurança e Qualidade
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  security_scan:
+    name: CodeQL Analysis
+    runs-on: ubuntu-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+
+    steps:
+    - name: Checkout do Repositório
+      uses: actions/checkout@v4
+
+    - name: Inicializar CodeQL (Ferramenta de Segurança do GitHub)
+      uses: github/codeql-action/init@v3
+      with:
+        languages: 'javascript' # Altere ou adicione 'python' se houver scripts backend no futuro
+
+    - name: Executar Análise de Vulnerabilidades
+      uses: github/codeql-action/analyze@v3
