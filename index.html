@@ -6,7 +6,14 @@
   <title>Portfólio - Alexandre Ramos</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-</head>
+
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; img-src 'self' data:; font-src https://fonts.gstatic.com https://cdnjs.cloudflare.com;">
+
+  <meta name="Referrer-Policy" content="no-referrer-when-downgrade">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  </head>
 <body>
   <header>
     <h1>Alexandre Ramos</h1>
@@ -64,13 +71,11 @@
     </ul>
   </section>
 
-  <!-- Seção apenas com descrição do projeto em C -->
   <section id="programas" class="card teal">
     <h2><i class="fa fa-code"></i> Exercícios em C</h2>
     <p>Possuo vários exercícios em C, se julgar necessário acesse meu perfil do github para visualizar alguns deles.</p>
   </section>
 
-  <!-- Seção para executar programas em C via WebAssembly -->
   <section id="executar" class="card teal">
     <h2><i class="fa fa-terminal"></i> Executar Programas em C</h2>
     <p>Clique no botão abaixo para rodar um programa em C compilado para WebAssembly: (desabilitado temporariamente)</p>
@@ -92,19 +97,6 @@
     <p>© 2026 Alexandre Ramos</p>
   </footer>
 
-  <!-- Script externo para rodar C -->
   <script src="runC.js"></script>
 </body>
 </html>
-// A partetir deste momento tudo foi gerado pela IA gemini para a entrega final!
-<!-- Content Security Policy (CSP) -->
-<!-- Melhora a segurança restringindo de onde os scripts, estilos e imagens podem ser carregados, o que também otimiza a renderização pelo navegador -->
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; img-src 'self' data:; font-src https://fonts.gstatic.com;">
-
-<!-- Referrer Policy -->
-<!-- Protege a privacidade dos usuários e economiza largura de banda ao não enviar informações desnecessárias de cabeçalho nas requisições -->
-<meta name="Referrer-Policy" content="no-referrer-when-downgrade">
-
-<!-- X-Content-Type-Options -->
-<!-- Força o navegador a seguir estritamente os tipos MIME declarados, prevenindo ataques de personificação de arquivos -->
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
